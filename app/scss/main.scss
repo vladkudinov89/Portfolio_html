@@ -1,8 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
+/*@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);*/
 @import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic');
 
 body {
-  font: 300 14px/1.8 'Raleway', sans-serif;
+  /*font: 300 14px/1.8 'Raleway', sans-serif;*/
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
   color: #666;
   overflow-x: hidden;
 }
@@ -53,7 +57,7 @@ a,
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font: 700 40px/1.2 Raleway, sans-serif;
+  font: 700 46px/1.2 Roboto, sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
   margin: 5px 0 5px;
@@ -257,7 +261,7 @@ textarea.form-control {
 }
 
 .pfblock-subtitle {
-  font-family: Raleway, "Times New Roman", Times, sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 18px;
 }
@@ -368,8 +372,8 @@ textarea.form-control {
 }
 
 .start {
-  font-family: Raleway, "Times New Roman", Times, sans-serif;
-  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
   font-style: normal;
   text-transform: none;
   margin: 15px 0;

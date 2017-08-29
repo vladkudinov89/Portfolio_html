@@ -43,7 +43,7 @@
          alert("Klick");
          });*/
 
-        $('').magnificPopup({
+        /*$('').magnificPopup({
             type: 'image',
             closeOnContentClick: true,
             closeBtnInside: false,
@@ -52,16 +52,16 @@
             image: {
                 verticalFit: true,
                 titleSrc: function(item) {
-                    return '<a href="' + item.el.attr('title') + '">'
+                    return '<a href="' + item.el.attr('title') + '">'+
 
-                        + item.el.attr('title') + '</a>'+ '<small>Photo by Marsel Van Oosten</small>';
+                         item.el.attr('title') + '</a>'+ '<small>Photo by Marsel Van Oosten</small>';
 
-                },/*titleSrc: function(item) {
+                },/!*titleSrc: function(item) {
                  return '<a href="' + item.el.attr('href') + '">'
 
                  + item.el.attr('title') + '</a>'+ '<small>Photo by Marsel Van Oosten</small>';
 
-                 },*/
+                 },*!/
                 tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
             },
             zoom: {
@@ -70,7 +70,7 @@
             }
 
 
-        });
+        });*/
 
         /* ---------------------------------------------- /*
          * Smooth scroll / Scroll To Top
@@ -105,7 +105,7 @@
         $('body').scrollspy({
             target: '.navbar-custom',
             offset: 70
-        })
+        });
 
 
         /* ---------------------------------------------- /*
