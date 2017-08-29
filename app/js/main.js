@@ -57,11 +57,11 @@
                         + item.el.attr('title') + '</a>'+ '<small>Photo by Marsel Van Oosten</small>';
 
                 },/*titleSrc: function(item) {
-                    return '<a href="' + item.el.attr('href') + '">'
+                 return '<a href="' + item.el.attr('href') + '">'
 
-                        + item.el.attr('title') + '</a>'+ '<small>Photo by Marsel Van Oosten</small>';
+                 + item.el.attr('title') + '</a>'+ '<small>Photo by Marsel Van Oosten</small>';
 
-                },*/
+                 },*/
                 tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
             },
             zoom: {
@@ -79,12 +79,12 @@
         /*Working without this*/
         $('a[href="*"]').bind("click", function(e){
 
-         var anchor = $(this);
-         $('html, body').stop().animate({
-         scrollTop: $(anchor.attr('href')).offset().top
-         }, 1000);
-         e.preventDefault();
-         });
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top
+            }, 1000);
+            e.preventDefault();
+        });
 
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
