@@ -1,3 +1,14 @@
+.bg-top{
+  background-color: #111;
+}
+
+.bg-html{
+  background: #fff url(../assets/images/html.jpg) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  opacity: 0.1;
+}
+
 
 .bg-brouse {
   background: #fff url(../assets/images/bg-brouser.png) no-repeat;
@@ -22,3 +33,5 @@
   }
 
 }
+
+
