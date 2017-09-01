@@ -1,14 +1,66 @@
-.bg-top{
-  background-color: #111;
-}
 
-.bg-html{
-  background: #fff url(../assets/images/html.jpg) 0 0 no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  opacity: 0.1;
-}
 
+.bread{
+  text-align: left;
+  margin-top: 25px;
+  padding-left: 0;
+
+  li{
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+    font-size: 12px;
+    color: #666;
+
+    &:before{
+      position: absolute;
+      content: '/';
+      top: 0;
+      right: -16px;
+      width: 15px;
+      height: 22px;
+      line-height: 23px;
+      font-size: 14px;
+      text-align: center;
+      color: #2cbc99;
+    }
+    &:last-child:before{
+      content: '';
+    }
+
+  }/*li*/
+  a{
+    display: block;
+    color: #2cbc99;
+    line-height: 22px;
+    font-size: 12px;
+  }
+
+}/*bread*/
+.portfolio-item-about{
+  h2{
+    margin: 0;
+  }
+
+  h4{
+    position: relative;
+    color: #2cbc99;
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: 100;
+
+    &:before{
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 360px;
+      height: 1px;
+      background-color: #ccc;
+    }
+  }
+}
 
 .bg-brouse {
   background: #fff url(../assets/images/bg-brouser.png) no-repeat;
