@@ -36,6 +36,68 @@ a,
   transition: all 0.125s ease-in-out 0s;
 }
 
+.nav-animation{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 43px;
+  height: 41px;
+  transform: translateY(-50%);
+}
+
+@keyframes rotation-right {
+  0% {
+    transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes rotation-left {
+  0% {
+    transform: rotate(360deg)
+  }
+  100% {
+    transform: rotate(0)
+  }
+}
+
+.gear-navigation-large {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 27px;
+  height: 27px;
+  -webkit-animation: rotation-right 15s linear infinite;
+  animation: rotation-right 15s linear infinite;
+  background-size: cover;
+}
+
+.gear-navigation-small {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: rotation-left 11.25s linear infinite;
+  animation: rotation-left 11.25s linear infinite;
+  background-size: cover;
+}
+
+.gear-navigation-large.light {
+  background-image: url(../assets/images/gear-dark-large.svg);
+}
+
+.gear-navigation-small.light {
+  background-image: url(../assets/images/gear-dark-small.svg);
+}
+
 /* ---------------------------------------------- /*
  * Imports
 /* ---------------------------------------------- */
@@ -267,7 +329,7 @@ textarea.form-control {
   font-size: 18px;
 }
 
-.pfblock-line {
+.circlepfblock-line {
   background: rgba(135, 135, 135, 0.5);
   width: 100px;
   height: 1px;
@@ -340,7 +402,7 @@ textarea.form-control {
 }
 
 .home-overlay {
-  background-color: rgba(0,0,0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   background-image: url("../assets/images/pattern.png");
   background-repeat: repeat;
   height: 100%;
@@ -365,7 +427,7 @@ textarea.form-control {
   font-weight: 800;
 }
 
-.green{
+.green {
   color: #31d097 !important;
 }
 
@@ -390,11 +452,11 @@ textarea.form-control {
   cursor: default;
   transition: 0.3s all;
 
-  &:hover{
+  &:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(21, 24, 26, 0.15);
 
-    .iconbox-icon{
+    .iconbox-icon {
       color: #31d097;
     }
   }
@@ -507,8 +569,6 @@ textarea.form-control {
   color: rgba(255, 255, 255, .8);
 }
 
-
-
 /* ---------------------------------------------- /*
  * Scroll to top
 /* ---------------------------------------------- */
@@ -603,8 +663,6 @@ textarea.form-control {
   }
 }
 
-
-
 /* ---------------------------------------------- /*
  * Media
 /* ---------------------------------------------- */
@@ -631,8 +689,6 @@ textarea.form-control {
   }
 
 }
-
-
 
 /*-----------------------*/
 /***** Quote Rotator *****/

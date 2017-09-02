@@ -1,18 +1,17 @@
 
-
-.bread{
+.bread {
   text-align: left;
   margin-top: 25px;
   padding-left: 0;
 
-  li{
+  li {
     display: inline-block;
     position: relative;
     margin-right: 15px;
     font-size: 12px;
     color: #666;
 
-    &:before{
+    &:before {
       position: absolute;
       content: '/';
       top: 0;
@@ -24,42 +23,108 @@
       text-align: center;
       color: #2cbc99;
     }
-    &:last-child:before{
+    &:last-child:before {
       content: '';
     }
 
-  }/*li*/
-  a{
+  }
+  /*li*/
+  a {
     display: block;
     color: #2cbc99;
     line-height: 22px;
     font-size: 12px;
   }
 
-}/*bread*/
-.portfolio-item-about{
-  h2{
+}
+
+/*bread*/
+
+.portfolio-item-about {
+  margin-bottom: 50px;
+  font-size: 18px;
+
+  ul {
+    list-style: none;
     margin: 0;
+    padding: 0;
   }
 
-  h4{
+  h3 {
     position: relative;
-    color: #2cbc99;
+    color: #31d097;
     font-size: 20px;
     margin-top: 25px;
-    font-weight: 100;
+    padding-bottom: 10px;
 
-    &:before{
+    &:before {
+      display: inline-block;
       position: absolute;
       content: '';
-      top: 0;
+      bottom: 0;
       left: 0;
       width: 100%;
-      max-width: 360px;
       height: 1px;
-      background-color: #ccc;
+      background-color: #31d097;
     }
   }
+
+  .button {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+  }
+  .btn-4 {
+    border-radius: 50px;
+    border: 3px solid #111;
+    color: #111;
+    overflow: hidden;
+  }
+
+  .btn-4:hover {
+    background: #24b662;
+  }
+
+
+  .btn-4a:hover:before {
+    left: 80%;
+  }
+
+.btn-4a:before {
+   left: 130%;
+   top: 0;
+ }
+
+  .btn-4:before {
+    position: absolute;
+    height: 100%;
+    font-size: 110%;
+    line-height: 3.5;
+    color: #111;
+    transition: all 0.3s;
+  }
+  .icon-arrow-right:before {
+    font-family: FontAwesome;
+    content: "\f06e";
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+
+
+
 }
 
 .bg-brouse {
@@ -69,7 +134,14 @@
   height: 700px;
   width: 100%;
   padding: 63px 16px 94px 17px;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 100px 0px;
+
+  .adress{
+    position: absolute;
+    color: #fff;
+    top: 25px;
+    left: 280px;
+  }
 
   .image-test {
     position: relative;

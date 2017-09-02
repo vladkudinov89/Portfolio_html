@@ -221,6 +221,7 @@ ol.type li a:hover {
 
 .grid figure h2 span {
   font-weight: 800;
+  color: #31d097;
 }
 
 .grid figure h2,
@@ -238,11 +239,11 @@ ol.type li a:hover {
 /*---------------*/
 
 figure.effect-bubba {
-  background: #9e5406;
+  background: #31d097;
 }
 
 figure.effect-bubba img {
-  opacity: 0.7;
+  opacity: 0.9;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
@@ -304,8 +305,10 @@ figure.effect-bubba:hover figcaption::after {
 }
 
 figure.effect-bubba:hover h2,
+figure.effect-bubba:hover span,
 figure.effect-bubba:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+  color: #fff !important;
 }

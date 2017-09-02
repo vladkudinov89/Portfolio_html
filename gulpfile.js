@@ -39,7 +39,8 @@ gulp.task('watch', ['bower', 'browser-sync'], function(){
     gulp.watch("app/scss/*.scss", ['sass']);
     gulp.watch("bower.json", ['bower-inject']);
     gulp.watch("app/js/*.js").on('change', browserSync.reload);
-    gulp.watch("./app/index.html" /*, "./app/landingpage/daikin.html"*/).on('change', browserSync.reload);
+    gulp.watch("./app/index.html").on('change', browserSync.reload);
+    gulp.watch("./app/landingpage/daikin.html").on('change', browserSync.reload);
 });
 
 gulp.task('default', ['watch']);
