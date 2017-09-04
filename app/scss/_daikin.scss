@@ -133,7 +133,7 @@
   position: relative;
   height: 700px;
   width: 100%;
-  padding: 63px 16px 94px 17px;
+  padding: 63px 16px 19px 17px;
   margin: 0px 0px 100px 0px;
 
   .adress{
@@ -143,13 +143,19 @@
     left: 280px;
   }
 
+  .nano { background: transparent; }
+  .nano > .nano-content { padding: 0; }
+  .nano > .nano-pane   { background: #888; }
+  .nano > .nano-pane > .nano-slider { background: #111; }
+
   .image-test {
     position: relative;
     display: block;
-    width: 100%;
+    //width: 100%;
     height: 618px;
-    overflow-y: auto;
+    //overflow-y: auto;
     border-radius: 0 0 0 10px;
+
 
     img {
       width: 100%;

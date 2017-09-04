@@ -39,38 +39,40 @@
 
     $(document).ready(function () {
 
+        $(".nano").nanoScroller();
+
         /*$("figure").click(function () {
          alert("Klick");
          });*/
 
         /*$('').magnificPopup({
-            type: 'image',
-            closeOnContentClick: true,
-            closeBtnInside: false,
-            fixedContentPos: true,
-            mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-            image: {
-                verticalFit: true,
-                titleSrc: function(item) {
-                    return '<a href="' + item.el.attr('title') + '">'+
+         type: 'image',
+         closeOnContentClick: true,
+         closeBtnInside: false,
+         fixedContentPos: true,
+         mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+         image: {
+         verticalFit: true,
+         titleSrc: function(item) {
+         return '<a href="' + item.el.attr('title') + '">'+
 
-                         item.el.attr('title') + '</a>'+ '<small>Photo by Marsel Van Oosten</small>';
+         item.el.attr('title') + '</a>'+ '<small>Photo by Marsel Van Oosten</small>';
 
-                },/!*titleSrc: function(item) {
-                 return '<a href="' + item.el.attr('href') + '">'
+         },/!*titleSrc: function(item) {
+         return '<a href="' + item.el.attr('href') + '">'
 
-                 + item.el.attr('title') + '</a>'+ '<small>Photo by Marsel Van Oosten</small>';
+         + item.el.attr('title') + '</a>'+ '<small>Photo by Marsel Van Oosten</small>';
 
-                 },*!/
-                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-            },
-            zoom: {
-                enabled: true,
-                duration: 300 // don't foget to change the duration also in CSS
-            }
+         },*!/
+         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+         },
+         zoom: {
+         enabled: true,
+         duration: 300 // don't foget to change the duration also in CSS
+         }
 
 
-        });*/
+         });*/
 
         /* ---------------------------------------------- /*
          * Smooth scroll / Scroll To Top
@@ -79,12 +81,12 @@
         /*Working without this*/
         /*$('a[href*="#"]').bind("click", function(e){
 
-            var anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $(anchor.attr('href')).offset().top
-            }, 1000);
-            e.preventDefault();
-        });*/
+         var anchor = $(this);
+         $('html, body').stop().animate({
+         scrollTop: $(anchor.attr('href')).offset().top
+         }, 1000);
+         e.preventDefault();
+         });*/
 
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {

@@ -8,6 +8,7 @@
     <link href="../css/font-awesome.min.css" rel="stylesheet" media="screen">
     <link href="../css/simple-line-icons.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="../libs/animate.css/animate.css"/>
+    <link rel="stylesheet" href="../libs/nanoscroller/bin/css/nanoscroller.css" />
     <link rel="stylesheet" href="../css/main.css" type="text/css"/>
 </head>
 <body>
@@ -62,15 +63,15 @@
             <li>Daikin</li>
         </ul>
 
-        <div class="text-center col-sm-6 col-sm-offset-3 wow fadeInUp" data-wow-delay=".5s">
-            <h2 class="pfblock-title">Daikin</h2>
+        <div class="text-center col-sm-6 col-sm-offset-3" >
+            <h2 class="pfblock-title wow fadeIn">Daikin</h2>
             <div class="pfblock-line"></div>
-            <h3>Landing page DAIKIN</h3>
-            <p>Разработка landing page. Создание трендового дизайна,
+            <h3 class="wow fadeIn" data-wow-delay="0.5s">Landing page DAIKIN</h3>
+            <p class="wow fadeIn" data-wow-delay="1s">Разработка landing page. Создание трендового дизайна,
                 верстка уникального шаблона, адаптация под мобильные устройства, самописный код JS
             </p>
-            <h3>Technologies:</h3>
-            <ul>
+            <h3 class="wow fadeIn" data-wow-delay="1.5s">Technologies:</h3>
+            <ul class="wow fadeIn" data-wow-delay="2s">
                 <li><i class="fa fa-html5" aria-hidden="true"></i> HTML</li>
                 <li><i class="fa fa-css3" aria-hidden="true"></i> SCSS</li>
                 <li>jQuery</li>
@@ -80,7 +81,8 @@
                 <li>PHP</li>
                 <li>AJAX</li>
             </ul>
-            <a href="http://daikin-klimat.od.ua" target="_blank" class="button btn-4 btn-4a icon-arrow-right">Смотреть <!--<i class="fa fa-eye" aria-hidden="true"></i>--></a>
+            <a href="http://daikin-klimat.od.ua" target="_blank" class="button btn-4 btn-4a icon-arrow-right  wow fadeInUp" data-wow-delay="2.5s">Смотреть
+                <!--<i class="fa fa-eye" aria-hidden="true"></i>--></a>
         </div>
 
     </div>
@@ -88,10 +90,12 @@
 
 <div class="container">
     <div class="col-md-12">
-        <div class="bg-brouse wow zoomInUp" data-wow-delay="1.5s">
+        <div class="bg-brouse wow zoomInUp" data-wow-delay="3s">
             <a href="http://daikin-klimat.od.ua" class="adress" target="_blank">http://daikin-klimat.od.ua</a>
-            <div class="image-test">
-                <img class="wow zoomIn" data-wow-delay="2s" src="/assets/images/daikin-big.png" alt="">
+            <div class="nano">
+                <div class="image-test nano-content">
+                    <img class="wow zoomIn" data-wow-delay="3.5s" src="/assets/images/daikin-big.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -142,6 +146,10 @@
 <script src="../libs/jquery.easy-pie-chart/dist/jquery.easypiechart.js"></script>
 <script src="../libs/waypoints/lib/jquery.waypoints.min.js"></script>
 <script src="../libs/jquery.cbpQTRotator.js"></script>
+<script src="../libs/nanoscroller/bin/javascripts/jquery.nanoscroller.js"></script>
+<!--<script>
+    $(".nano").nanoScroller();
+</script>-->
 <script type="text/javascript" src="../js/main.js"></script>
 
 
