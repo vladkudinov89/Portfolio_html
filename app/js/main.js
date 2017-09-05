@@ -1,5 +1,9 @@
 (function ($) {
 
+    $(window).on('activate.bs.scrollspy', function (e) {
+        history.pushState('',document.title,window.location.pathname);
+    });
+
     /* ---------------------------------------------- /*
      * Preloader
      /* ---------------------------------------------- */
@@ -41,52 +45,16 @@
 
         $(".nano").nanoScroller();
 
-        /*$("figure").click(function () {
-         alert("Klick");
-         });*/
+        $("#custom-collapse a").on('click', function (event) {
 
-        /*$('').magnificPopup({
-         type: 'image',
-         closeOnContentClick: true,
-         closeBtnInside: false,
-         fixedContentPos: true,
-         mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-         image: {
-         verticalFit: true,
-         titleSrc: function(item) {
-         return '<a href="' + item.el.attr('title') + '">'+
+                $(".navbar-collapse").collapse('hide');
 
-         item.el.attr('title') + '</a>'+ '<small>Photo by Marsel Van Oosten</small>';
+        });
 
-         },/!*titleSrc: function(item) {
-         return '<a href="' + item.el.attr('href') + '">'
-
-         + item.el.attr('title') + '</a>'+ '<small>Photo by Marsel Van Oosten</small>';
-
-         },*!/
-         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-         },
-         zoom: {
-         enabled: true,
-         duration: 300 // don't foget to change the duration also in CSS
-         }
-
-
-         });*/
 
         /* ---------------------------------------------- /*
          * Smooth scroll / Scroll To Top
          /* ---------------------------------------------- */
-
-        /*Working without this*/
-        /*$('a[href*="#"]').bind("click", function(e){
-
-         var anchor = $(this);
-         $('html, body').stop().animate({
-         scrollTop: $(anchor.attr('href')).offset().top
-         }, 1000);
-         e.preventDefault();
-         });*/
 
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
@@ -135,21 +103,6 @@
          /* ---------------------------------------------- */
 
         $(function () {
-            /*
-             - how to call the plugin:
-             $( selector ).cbpQTRotator( [options] );
-             - options:
-             {
-             // default transition speed (ms)
-             speed : 700,
-             // default transition easing
-             easing : 'ease',
-             // rotator interval (ms)
-             interval : 8000
-             }
-             - destroy:
-             $( selector ).cbpQTRotator( 'destroy' );
-             */
 
             $('#cbp-qtrotator').cbpQTRotator();
 
@@ -181,7 +134,6 @@
             mobile: false
         });
         wow.init();
-
 
         /* ---------------------------------------------- /*
          * E-mail validation
@@ -231,6 +183,7 @@
             }
             return false;
         });
+
 
     });
 

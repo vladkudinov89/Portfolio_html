@@ -1,7 +1,7 @@
 
 .bread {
   text-align: left;
-  margin-top: 25px;
+  margin-top: 25px !important;
   padding-left: 0;
 
   li {
@@ -88,13 +88,15 @@
   }
   .btn-4 {
     border-radius: 50px;
-    border: 3px solid #111;
-    color: #111;
+    border: 3px solid #31d097;
+    color: #31d097;
     overflow: hidden;
   }
 
   .btn-4:hover {
-    background: #24b662;
+    border-color: #666;
+    background-color: #31d097;
+    color: #fff;
   }
 
 
@@ -112,7 +114,7 @@
     height: 100%;
     font-size: 110%;
     line-height: 3.5;
-    color: #111;
+    color: #666;
     transition: all 0.3s;
   }
   .icon-arrow-right:before {
@@ -134,7 +136,7 @@
   height: 700px;
   width: 100%;
   padding: 63px 16px 19px 17px;
-  margin: 0px 0px 100px 0px;
+  margin: 0;
 
   .adress{
     position: absolute;
