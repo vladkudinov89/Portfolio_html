@@ -41,11 +41,6 @@
 
         $(".nano").nanoScroller();
 
-        $("#custom-collapse a").on('click', function (event) {
-            $(".navbar-collapse").collapse('hide');
-        });
-
-
 
         /* ---------------------------------------------- /*
          * Smooth scroll / Scroll To Top
