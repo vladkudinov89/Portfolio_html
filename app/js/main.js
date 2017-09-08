@@ -1,9 +1,5 @@
 (function ($) {
 
-    $(window).on('activate.bs.scrollspy', function (e) {
-        history.pushState('',document.title,window.location.pathname);
-    });
-
     /* ---------------------------------------------- /*
      * Preloader
      /* ---------------------------------------------- */
@@ -46,10 +42,9 @@
         $(".nano").nanoScroller();
 
         $("#custom-collapse a").on('click', function (event) {
-
-                $(".navbar-collapse").collapse('hide');
-
+            $(".navbar-collapse").collapse('hide');
         });
+
 
 
         /* ---------------------------------------------- /*

@@ -1,6 +1,6 @@
 {
   "name": "portfolio-project",
-  "description": "STARTER-PACK Gulp+Bower+Sass+Browser-sync+Wiredep",
+  "description": "Gulp+Bower+Sass+Browser-sync+Wiredep",
   "main": "index.js",
   "authors": [
     "Vlad Kudinov <vlad.kudinov.89@gmail.com>"
@@ -26,7 +26,8 @@
     "waypoints": "4.0.1",
     "wow": "1.1.2",
     "fontawesome": "4.7.0",
-    "nanoscroller": "^0.8.7"
+    "nanoscroller": "^0.8.7",
+    "typed.js": "^2.0.5"
   },
   "overrides": {
     "bootstrap": {

@@ -41,11 +41,11 @@ ol.type li a {
   padding: 2px 8px;
 }
 ol.type li a.active {
-  color: #E87E04;
+  color: $main-color;
   padding: 2px 8px;
 }
 ol.type li a:hover {
-  color: #E87E04;
+  color: $main-color;
 }
 .isotope-item {
   z-index: 2
@@ -55,43 +55,26 @@ ol.type li a:hover {
 }
 .isotope, .isotope .isotope-item {
   /* change duration value to whatever you like */
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
   transition-duration: 0.8s;
 }
 .isotope-item {
   margin-right: -1px;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .isotope {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transition-property: height, width;
-  -moz-transition-property: height, width;
   transition-property: height, width;
 }
 .isotope .isotope-item {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transition-property: -webkit-transform, opacity;
-  -moz-transition-property: -moz-transform, opacity;
   transition-property: transform, opacity;
 }
 .portfolio-item {
   margin-bottom: 30px;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 .portfolio-item:hover {
   margin-bottom: 30px;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
   transform: scale(1.2);
 }
 .portfolio-item .hover-bg {
